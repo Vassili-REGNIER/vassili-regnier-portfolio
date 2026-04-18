@@ -191,7 +191,9 @@ a { color: inherit; text-decoration: none; }
 
 .hero__inner { max-width: var(--max-width); width: 100%; margin: 0 auto; }
 .hero__avatar {
-  width: 8rem; height: 8rem;
+  width: min(16rem, calc(100vw - 3rem));
+  height: min(16rem, calc(100vw - 3rem));
+  aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden; margin: 0 auto 2rem;
   border: 2px solid var(--accent-orange);
